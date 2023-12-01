@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(68, 73, 246);
+}
+
 .container {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.slider-wrapper{
+    border: 3px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .item {
@@ -16,6 +25,15 @@
     width: 800px;
     height: 500px;
     position: relative;
+}
+
+div#app > h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding-top: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .item img {
@@ -27,6 +45,7 @@
 .item .text {
     position: absolute;
     bottom: 15px;
+    width: 100%;
     right: 0;
     padding-right: .5rem;
     padding-bottom: .3rem;
@@ -47,6 +66,11 @@
 .thumb {
     height: calc((500px) / 9);
     opacity: 0.5;
+}
+
+.thumb :hover{
+    opacity: 1;
+    border: 2px solid white;
 }
 
 .thumb img {
